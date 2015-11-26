@@ -1,4 +1,19 @@
 ---
-layout: default
+layout: home
 ---
 
+<section class="hero">
+
+  <div class="hero-inner container">
+
+    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
+    <h1>Hello!..</h1>
+    <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+    <h3>{{ site.author.bio }}</h3>
+
+    <a href="#" class="btn btn-ghost">_about me</a>
+    <a href="#" class="btn btn-ghost">_contact me</a>
+
+  </div>
+
+</section>

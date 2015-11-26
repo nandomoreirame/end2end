@@ -28,7 +28,8 @@ disqus_shortname: "fernandomoreira"
 # Author settings
 author:
   name      : Fernando Moreira
-  image     : /assets/images/author.jpg
+  job       : Frontend Engineer
+  thumb     : /images/author.jpg
   email     : nandomoreira.me@gmail.com
   url       : http://nandomoreira.me
   facebook  : http://facebook.com/fernando.dev
@@ -36,7 +37,7 @@ author:
   instagram : http://instagram.com/nandomoreira.me
   github    : http://github.com/nandomoreirame
   linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
+  bio       : "Enthusiast performance, responsive design and usability, always looking for the best design and good coffee."
 
 # navbar pages
 navbar:
