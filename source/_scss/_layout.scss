@@ -5,8 +5,61 @@
 
 body {
   border-top: 5px solid $primary-color;
+  background-color: $secondary-background-color;
 }
 
 .container {
   @include outer-container;
+}
+
+.site-header {
+  @extend %clearfix;
+  background-color: $white-color;
+  padding: $base-spacing 0;
+  margin-bottom: $base-spacing;
+  border-bottom: 1px solid rgba($light-gray-color, .5);
+
+  h1 {
+    margin: 0;
+    padding: 5px 0;
+    float: left;
+    font-weight: $font-weight-normal;
+    font-size: rem(20);
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  h1, a {
+    text-transform: lowercase;
+  }
+
+  .navbar {
+    float: right;
+  }
+
+  a {
+    color: $medium-gray-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $dark-gray-color;
+    }
+
+    &:before {
+      content: '_';
+    }
+  }
+}
+
+.navbar {
+  li, a {
+    display: inline-block;
+  }
+
+  a {
+    padding: 5px 15px;
+  }
 }
