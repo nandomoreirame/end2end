@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="container">
+    <h1><a href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a></h1>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+        {% for item in site.navbar %}
+          <li><a href="/{{ item.slug | prepend: site.baseurl }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

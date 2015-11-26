@@ -1,0 +1,12 @@
+/*=====================================
+=            Layout styles            =
+=====================================*/
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+
+body {
+  border-top: 5px solid $primary-color;
+}
+
+.container {
+  @include outer-container;
+}
