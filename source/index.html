@@ -11,8 +11,8 @@ layout: home
     <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
     <h3>{{ site.author.bio }}</h3>
 
-    <a href="#" class="btn btn-ghost">_about me</a>
-    <a href="#" class="btn btn-ghost">_contact me</a>
+    <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-ghost">about</a>
+    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-ghost">blog</a>
 
   </div>
 

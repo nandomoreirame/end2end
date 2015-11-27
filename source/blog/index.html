@@ -3,6 +3,14 @@ layout: default
 permalink: /blog/
 ---
 
+<section class="post-list">
+  {% for post in paginator.posts %}
+    {% include article.html %}
+  {% endfor %}
+
+  {% include pagination.html %}
+</section>
+
 <h1 class="page-heading">Posts</h1>
 
 <ul class="post-list">

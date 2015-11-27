@@ -1,11 +1,11 @@
 # Build settings
-permalink   : /:categories/:year/:title/
+permalink   : /blog/:year/:title/
 markdown    : kramdown
 highlighter : pygments
 
 paginate: 2 #6
+paginate_path: "/blog/page:num/"
 comments: true
-paginate_path: "/page/:num"
 
 source: source
 destination: _site
@@ -18,8 +18,8 @@ title: end2end
 description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 url: http://nandomoreira.me
-baseurl: "/end2end"
-#baseurl: ""
+# baseurl: "/end2end"
+baseurl: ""
 
 # google_analytics: UA-52446115-1
 repo: http://github.com/nandomoreirame/end2end
@@ -37,7 +37,7 @@ author:
   instagram : http://instagram.com/nandomoreira.me
   github    : http://github.com/nandomoreirame
   linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best design and good coffee."
+  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
 
 # navbar pages
 navbar:
@@ -45,8 +45,8 @@ navbar:
     title: About
   - slug: resume
     title: Resume
-  - slug: skills
-    title: Skills
+  # - slug: skills
+  #   title: Skills
   - slug: blog
     title: Blog
 

@@ -53,10 +53,6 @@ body {
     &:active {
       color: $dark-gray-color;
     }
-
-    &:before {
-      content: '_';
-    }
   }
 }
 
