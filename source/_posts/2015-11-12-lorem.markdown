@@ -4,6 +4,7 @@ title:  "Lorem ipsum dolor sit amet"
 description: "Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui."
 date:   2015-11-12 19:19:43
 keywords: "welcome, Aenean, fermentum, Lorem, ipsum"
+comments: true
 category: welcome
 ---
 

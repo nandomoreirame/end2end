@@ -43,6 +43,7 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
+  font-weight: $font-weight-light;
 }
 
 em {
@@ -87,7 +88,7 @@ code {
   font-size: 0.9em;
   margin: 0;
   padding: 0 5px;
-  background-color: #dedede;
+  background-color: lighten($light-gray-color, 6%);
 }
 
 pre {

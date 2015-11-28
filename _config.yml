@@ -4,7 +4,7 @@ markdown    : kramdown
 highlighter : pygments
 
 paginate: 2 #6
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/page/:num/"
 comments: true
 
 source: source
