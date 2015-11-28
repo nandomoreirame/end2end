@@ -11,7 +11,7 @@
     <nav class="navbar sliding-panel-content">
       <ul>
         {% for item in site.navbar %}
-          <li><a href="/{{ item.slug | prepend: site.baseurl }}" title="{{ item.title }}">{{ item.title }}</a></li>
+          <li><a href="{{ '/' | prepend: site.baseurl }}{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a></li>
         {% endfor %}
         <li><a href="{{ site.repo }}/archive/master.zip" title="Download">Download</a></li>
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-feed"></i></a></li>
