@@ -11,7 +11,7 @@ source: source
 destination: _site
 sass:
   sass_dir: _scss
-  style: expanded # compressed
+  style: compressed # expanded
 
 # SEO settings
 title: end2end
