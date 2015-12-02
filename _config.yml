@@ -3,7 +3,7 @@ permalink   : /blog/:year/:title/
 markdown    : kramdown
 highlighter : pygments
 
-paginate: 2 #6
+paginate: 3
 paginate_path: "/blog/page/:num/"
 comments: true
 
@@ -29,15 +29,14 @@ disqus_shortname: "fernandomoreira"
 author:
   name      : Fernando Moreira
   job       : Frontend Engineer
+  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
   thumb     : /images/author.jpg
   email     : nandomoreira.me@gmail.com
   url       : http://nandomoreira.me
-  facebook  : http://facebook.com/fernando.dev
-  twitter   : http://twitter.com/nandomoreirame
-  instagram : http://instagram.com/nandomoreira.me
   github    : http://github.com/nandomoreirame
+  twitter   : http://twitter.com/nandomoreirame
+  facebook  : http://facebook.com/fernando.dev
   linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
 
 # navbar pages
 navbar:

@@ -172,6 +172,16 @@ body {
     border: 2px solid $primary-color;
     color: $primary-color;
   }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+  }
 }
 
 // home hero presentation
@@ -301,7 +311,7 @@ body.home {
     font-size: rem(12);
   }
 
-  a.btn {
+  .btn {
     color: $base-font-color;
     border-color: rgba($light-gray-color, .8);
   }
