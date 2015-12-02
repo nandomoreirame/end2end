@@ -203,6 +203,7 @@ body.home {
 
   h3 {
     font-size: rem(20);
+    margin: .8em 0 1.2em;
 
     @include media($tablet-up) {
       font-size: rem(24);
@@ -246,7 +247,38 @@ body.home {
 
     a {
       color: $base-font-color;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $primary-color;
+      }
     }
+  }
+}
+
+
+.social {
+  @extend %clearfix;
+  padding: $base-spacing 0;
+
+  li {
+    display: inline-block;
+    padding: 0 ($base-spacing/2.5);
+  }
+
+  a {
+    color: $medium-gray-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  i {
+    font-size: 1.2em;
   }
 }
 
