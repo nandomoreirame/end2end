@@ -12,12 +12,6 @@ body {
 body {
   border-top: 5px solid $primary-color;
   background: $base-background-color url("../images/bg-pattern.png");
-
-  @include media($tablet-up) {
-    > main {
-      padding-bottom: 100px;
-    }
-  }
 }
 
 .container {
@@ -293,14 +287,6 @@ body.home {
   border-top: 1px solid rgba($light-gray-color, .5);
   padding: $base-spacing;
   text-align: center;
-
-  @include media($tablet-up) {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
 
   p {
     margin: 0;
