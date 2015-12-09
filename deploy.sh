@@ -15,4 +15,4 @@ git config --global user.name "Fernando Moreira"
 git init
 git add --all
 git commit -m "Deploy to GitHub Pages"
-git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REF}" gh-pages
+git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REF}" master:gh-pages
