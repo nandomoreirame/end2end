@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss forms input line height
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "forms", "input line height") {
+
+	@if normalize-get("options", "explanatory comments") { 
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+	}
+
+	input {
+		line-height: normal;
+	}
+
+}

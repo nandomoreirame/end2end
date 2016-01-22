@@ -1,0 +1,34 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss grouping content hr
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "grouping content", "hr") {
+
+	@if normalize-get("options", "explanatory comments") { 
+
+		@if normalize-get("options", "legacy support for ie7") {
+/**
+ * Correct `block` display not defined for `hr` in IE 7.
+ * Address differences between Firefox and other browsers.
+ */
+		}
+
+		@else {
+/**
+ * Address differences between Firefox and other browsers.
+ */
+		}
+
+	}
+
+	hr {
+		@if normalize-get("options", "legacy support for ie7") { 
+			display: block;
+		}
+		box-sizing: content-box;
+		height: 0;
+	}
+
+}

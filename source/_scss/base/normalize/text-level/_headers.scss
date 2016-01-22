@@ -1,0 +1,62 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss text level semantics headers
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "text level semantics", "headers") {
+
+	@if normalize-get("options", "explanatory comments") { 
+
+		@if normalize-get("options", "legacy support for ie7") {
+/**
+ * Address variables headers font-sizes and margins within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+		}
+
+		@else {
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+		}
+
+	}
+
+
+	h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+
+	@if normalize-get("options", "legacy support for ie7") {
+
+		h2 {
+		    font-size: 1.5em;
+		    margin: 0.83em 0;
+		}
+
+		h3 {
+		    font-size: 1.17em;
+		    margin: 1em 0;
+		}
+
+		h4 {
+		    font-size: 1em;
+		    margin: 1.33em 0;
+		}
+
+		h5 {
+		    font-size: 0.83em;
+		    margin: 1.67em 0;
+		}
+
+		h6 {
+		    font-size: 0.67em;
+		    margin: 2.33em 0;
+		}
+
+	}
+
+}

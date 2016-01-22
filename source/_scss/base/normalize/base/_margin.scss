@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss base margin
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "base", "reset margin") {
+
+	$reset-margin-tags:if(normalize-get("parts", "base", "reset margin"),normalize-get("parts", "base", "reset margin"),"");
+
+	@if normalize-get("options", "explanatory comments") {  
+/**
+ * Remove default margin.
+ */
+	}
+
+	#{$reset-margin-tags} {
+		margin: 0;
+	}
+
+}

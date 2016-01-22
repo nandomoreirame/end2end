@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss grouping content monospace
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "grouping content", "monospace") {
+
+	@if normalize-get("options", "explanatory comments") {
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+	}
+
+	code,
+	kbd,
+	pre,
+	samp {
+		font-family: monospace, monospace;
+		font-size: 1em;
+	}
+
+}

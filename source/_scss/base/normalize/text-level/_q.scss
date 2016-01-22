@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss text level semantics q
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("options", "legacy support for ie7") {
+
+	@if normalize-get("options", "explanatory comments") {
+/**
+ * Address CSS quotes not supported in IE 7.
+ */
+	}
+
+	q {
+	    quotes: none;
+	}
+
+}
+
+
