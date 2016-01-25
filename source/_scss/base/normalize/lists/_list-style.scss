@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss lists list style
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("options", "legacy support for ie7") {
+
+	@if normalize-get("options", "explanatory comments") {
+/**
+ * Address paddings set differently in IE 7.
+ */
+	}
+
+	nav ul,
+	nav ol {
+	    list-style: none;
+	    list-style-image: none;
+	}
+
+}

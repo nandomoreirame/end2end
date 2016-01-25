@@ -1,8 +1,9 @@
 ul,
 ol {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-position: inside;
+  padding-left: 25px;
 
   &%default-ul {
     list-style-type: disc;

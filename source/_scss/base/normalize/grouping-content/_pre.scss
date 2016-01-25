@@ -1,0 +1,37 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss grouping content pre
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "grouping content", "pre") {
+
+	@if normalize-get("options", "explanatory comments") { 
+
+		@if normalize-get("options", "legacy support for ie7") {
+/**
+ * 1. Address margins set differently in IE 6/7.
+ * 2. Contain overflow in all browsers.
+ */
+		}
+
+		@else {
+/**
+ * Contain overflow in all browsers.
+ */
+		}
+
+	}
+
+	@if normalize-get("options", "explanatory comments") {
+
+	}
+
+	pre {
+		@if normalize-get("options", "legacy support for ie7") {
+			margin: 1em 0; @if normalize-get("options", "explanatory comments") { /* 1 */ }
+		}
+		overflow: auto; @if normalize-get("options", "explanatory comments") and normalize-get("options", "legacy support for ie7") { /* 2 */ }
+	}
+
+}

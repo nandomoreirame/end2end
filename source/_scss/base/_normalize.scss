@@ -1,0 +1,80 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss v3.0.3 | Sass version of normalize.css | @Effeilo
+// based on normalize.css v3.0.2 | MIT License | git.io/normalize 
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Normalize settings
+//////////////////////////////////////////////////////////////
+
+$normalize-settings: (
+
+	"options": (
+		"explanatory comments":true, // true;false
+		"legacy support for ie7":false // true;false
+	),
+	"parts": (
+		"base": (
+			"html":true, // true;false
+			"reset margin":"body"// false;"list, separate, with, comma"
+		),
+		"html5": (
+			"block":true, // true;false
+			"inline block":true, // true;false
+			"audio":true, // true;false
+			"hidden":true  // true;false
+		),
+		"links": (
+			"background":true, // true;false
+			"outline":true  // true;false
+		),
+		"text level semantics": (
+			"abbr":true, // true;false
+			"bold":true, // true;false
+			"dfn":true, // true;false
+			"headers":true, // true;false
+			"mark":true, // true;false
+			"small":true, // true;false
+			"sub sup":true  // true;false
+		),
+		"embedded content": (
+			"img":true, // true;false
+			"svg":true  // true;false
+		),
+		"grouping content": (
+			"figure":true, // true;false
+			"hr":true, // true;false
+			"pre":true, // true;false
+			"monospace":true // true;false
+		),
+		"forms": (
+			"form elements reset":true, // true;false
+			"button overflow":true, // true;false
+			"button select text transform":true, // true;false
+			"button appearance":true, // true;false
+			"button input disabled":true, // true;false
+			"button input focus inner":true, // true;false
+			"input line height":true, // true;false
+			"input checkbox radio":true, // true;false
+			"input number":true, // true;false
+			"input search":true, // true;false
+			"fieldset":true, // true;false
+			"legend":true, // true;false
+			"textarea":true, // true;false 
+			"optgroup":true  // true;false 
+		),
+		"tables": (
+			"table":true, // true;false
+			"td th":true  // true;false
+		)
+	)
+
+);
+
+
+// normalize core
+//////////////////////////////////////////////////////////////
+
+@import "normalize/core";

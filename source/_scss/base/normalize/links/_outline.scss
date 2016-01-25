@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss links outline
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "links", "outline") {
+
+	@if normalize-get("options", "explanatory comments") { 
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+	}
+
+	a:active,
+	a:hover {
+		outline: 0;
+	}
+
+}

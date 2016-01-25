@@ -1,0 +1,30 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+//
+// normalize.scss text level semantics mark
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@if normalize-get("parts", "text level semantics", "mark") {
+
+	@if normalize-get("options", "explanatory comments") { 
+
+		@if normalize-get("options", "legacy support for ie7") {
+/**
+ * Address styling not present in IE 7/8/9.
+ */
+		}
+
+		@else {
+/**
+ * Address styling not present in IE 8/9.
+ */
+		}
+
+	}
+
+	mark {
+		background: #ff0;
+		color: #000;
+	}
+
+}
