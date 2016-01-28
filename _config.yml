@@ -14,30 +14,30 @@ sass:
   style: expanded # compressed
 
 # SEO settings
-title: end2end
+title: mvieira
 description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
+url: https://www.end2endsystems.com.br/
 # baseurl: "/end2end"
 baseurl: ""
 
-# google_analytics: UA-52446115-1
+google_analytics: UA-27171689-1
 repo: http://github.com/nandomoreirame/end2end
-disqus_shortname: "fernandomoreira"
+disqus_shortname: "matheuscostavieira"
 
 # Author settings
 author:
-  name      : Fernando Moreira
-  job       : Frontend Engineer
-  thumb     : /images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  facebook  : http://facebook.com/fernando.dev
-  twitter   : http://twitter.com/nandomoreirame
-  instagram : http://instagram.com/nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  name      : Matheus Costa Vieira
+  job       : Software Engineer
+  thumb     : /images/profile.png
+  email     : matheus.costa.vieira@gmail.com
+  url       : https://www.end2endsystems.com.br/
+  facebook  : https://facebook.com/macovieira
+  twitter   : https://twitter.com/macostavieira
+#  instagram : https://instagram.com/nandomoreira.me
+  github    : https://github.com/matheus-vieira
+  linkedin  : https://linkedin.com/in/macostavieira
+  bio       : "I love God, my wife, my son and then I love to create programs!"
 
 # navbar pages
 navbar:
