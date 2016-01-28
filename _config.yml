@@ -41,8 +41,8 @@ author:
 
 # navbar pages
 navbar:
-  - slug: about
-    title: About
+#  - slug: about
+#    title: About
   - slug: resume
     title: Resume
   # - slug: skills
