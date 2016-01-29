@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: resume
 title: Resume
 permalink: /resume/
 ---
 
-
-## About {{ site.title }}
+## About {{ site.author.name }}
 
 {% assign current_year = 'now' | date: '%Y' %}
 

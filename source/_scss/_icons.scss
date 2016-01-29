@@ -6,6 +6,9 @@ $icon-comment-o: "\e903";
 $icon-comments-o: "\e904";
 $icon-search: "\e906";
 $icon-share: "\e909";
+$icon-google-mail: "\&#x2709;"; //TODO: include in the end2end-icons font family
+$icon-horns: "\U+1F918;";
+$icon-coffe: "☕";
 $icon-google-plus: "\e901";
 $icon-facebook: "\e90a";
 $icon-facebook-rounded: "\e90b";
@@ -45,6 +48,7 @@ $icon-linkedin: "\e905";
 .icon-search:before { content: $icon-search; }
 .icon-share:before { content: $icon-share; }
 .icon-google-plus:before { content: $icon-google-plus; }
+.icon-google-mail:before { content: $icon-google-mail; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-facebook-rounded:before { content: $icon-facebook-rounded; }
 .icon-twitter:before { content: $icon-twitter; }
@@ -52,4 +56,5 @@ $icon-linkedin: "\e905";
 .icon-feed:before { content: $icon-feed; }
 .icon-github:before { content: $icon-github; }
 .icon-linkedin:before { content: $icon-linkedin; }
-
+.icon-horns:before { content: $icon-horns }
+.icon-coffee:before { content: $icon-coffe }

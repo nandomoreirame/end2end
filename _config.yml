@@ -15,8 +15,8 @@ sass:
 
 # SEO settings
 title: mvieira
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
+description: "An site with some personal informations, resume and blog from Matheus Costa vieira"
+keywords: "Jekyll, personal information, resume, Matheus, Costa, Vieira, Matheus Costa Vieira, blog, web"
 url: https://www.end2endsystems.com.br/
 # baseurl: "/end2end"
 baseurl: ""
@@ -30,11 +30,12 @@ author:
   name      : Matheus Costa Vieira
   job       : Software Engineer
   thumb     : /images/profile.png
+  url       : https://www.end2endsystems.com.br
   email     : matheus.costa.vieira@gmail.com
-  url       : https://www.end2endsystems.com.br/
+  gplus     : https://plus.google.com/+MatheusCostaVieira
   facebook  : https://facebook.com/macovieira
   twitter   : https://twitter.com/macostavieira
-#  instagram : https://instagram.com/nandomoreira.me
+#  instagram : https://instagram.com/macostavieira
   github    : https://github.com/matheus-vieira
   linkedin  : https://linkedin.com/in/macostavieira
   bio       : "I love God, my wife, my son and then I love to create programs!"
