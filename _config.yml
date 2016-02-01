@@ -42,12 +42,12 @@ author:
 
 # navbar pages
 navbar:
-#  - slug: about
-#    title: About
+  - slug: about
+    title: About
   - slug: resume
     title: Resume
-  # - slug: skills
-  #   title: Skills
+  - slug: skills
+    title: Skills
   - slug: blog
     title: Blog
 

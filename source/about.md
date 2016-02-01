@@ -1,11 +1,10 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## About {{ site.author.name }}
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+{% assign current_year = 'now' | date: '%Y' %}
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I'm {{ (current_year) | minus:1984 }} years old. Was born in Porto Alegre - Brazil. I'm married to Daniela Priscila Lins. We had two beautiful children Pedro Henrique Lins Vieira and Ana Carolina Lins Vieira. I'm envolved with systems development since 2006.
