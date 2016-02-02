@@ -1,0 +1,12 @@
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
+    <div class="post-meta">
+      <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+    </div>
+  </header>
+
+  <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">{{ post.content | strip_html | truncatewords: 30 }}</a></p>
+</article>

@@ -1,0 +1,7 @@
+<div class="well well-sm">
+	<h4>Institution: <strong>{{ page.institution }}</strong></h4>
+	<span>Graduation type: <strong>{{ page.type }}</strong></span><br />
+	<span>Course: {{ page.course }}</span><br />
+	<span><strong>{{ page.startdate  | date: "%B, %Y"}}</strong> - <strong>{{ page.enddate | date: "%B, %Y" }}</strong></span><br />
+	{{ content }}
+</div>

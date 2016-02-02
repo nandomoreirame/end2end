@@ -1,0 +1,59 @@
+# Build settings
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 2 #6
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: expanded # compressed
+
+# SEO settings
+title: mvieira
+description: "An site with some personal informations, resume and blog from Matheus Costa vieira"
+keywords: "Jekyll, personal information, resume, Matheus, Costa, Vieira, Matheus Costa Vieira, blog, web"
+url: https://www.end2endsystems.com.br/
+# baseurl: "/end2end"
+baseurl: ""
+
+google_analytics: UA-27171689-1
+repo: http://github.com/matheus-vieira/end2end
+disqus_shortname: "matheuscostavieira"
+
+# Author settings
+author:
+  name      : Matheus Costa Vieira
+  job       : Software Engineer
+  thumb     : /images/profile.png
+  url       : https://www.end2endsystems.com.br
+  email     : matheus.costa.vieira@gmail.com
+  gplus     : https://plus.google.com/+MatheusCostaVieira
+  facebook  : https://facebook.com/macovieira
+  twitter   : https://twitter.com/macostavieira
+#  instagram : https://instagram.com/macostavieira
+  github    : https://github.com/matheus-vieira
+  linkedin  : https://linkedin.com/in/macostavieira
+  bio       : "I love God, my wife, my son and then I love to create programs!"
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: resume
+    title: Resume
+  - slug: skills
+    title: Skills
+  - slug: blog
+    title: Blog
+
+collections:
+ - graduations
+ - experiences
+
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container">
+    <h1><a href="{{ "/" | prepend: site.baseurl }}">m<span>vieira</span></a></h1>
+
+    <button type="button" class="sliding-panel-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar sliding-panel-content">
+      <ul>
+        {% for item in site.navbar %}
+          <li><a href="{{ '/' | prepend: site.baseurl }}{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a></li>
+        {% endfor %}
+        <li><a href="{{ site.repo }}/archive/master.zip" title="Download">Download</a></li>
+        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-feed"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="sliding-panel-fade-screen"></div>

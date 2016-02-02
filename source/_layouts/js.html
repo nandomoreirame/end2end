@@ -1,0 +1,20 @@
+{% highlight js %}
+fetch('{{ page.url | replace: 'html', 'json' }}')
+  .then(function(response) {
+    return response.json()
+      .then(function(json) {
+        console.log(json.name);
+        // "{{ page.company }}"
+        console.log(json.admissionDate.format("yyyy-mm-dd"));
+        // {{ page.admissiondate | date: "%F" }}
+        console.log(json.resignationdate.format("yyyy-mm-dd"));
+        // {{ page.resignationdate | date: "%F" }}
+        console.log(json.atributions);
+        // {{ content | strip | replace: "<p>", "" | replace: "</p>", "" }}
+        console.log(json.languages);
+        // {{ page.languages | jsonify }}
+        console.log(json.frameworks);
+        // {{ page.frameworks | jsonify }}
+      });
+  });
+{% endhighlight %}

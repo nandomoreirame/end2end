@@ -1,0 +1,20 @@
+.txt-primary { color: $primary-color; }
+.txt-white { color: $white-color; }
+.txt-black { color: $black-color; }
+.txt-blue { color: $blue-color; }
+.txt-dark-gray { color: $dark-gray-color; }
+.txt-medium-gray { color: $medium-gray-color; }
+.txt-light-gray { color: $light-gray-color; }
+
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+.txt-center { text-align: center; }
+.txt-justify { text-align: justify; }
+
+.word-wrap {
+  @include word-wrap;
+}
+
+.dot {
+  border-radius: 50%;
+}
