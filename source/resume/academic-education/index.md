@@ -4,4 +4,7 @@ title: Academic Education
 permalink: /resume/academic-education/
 ---
 
-{% include education.html %}
+{% assign graduations = site.graduations | sort: 'url', 'last' %}
+{% for graduation in graduations %}
+  {{ graduation.output }}
+{% endfor %}
