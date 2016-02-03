@@ -1,20 +1,12 @@
 {% highlight js %}
-fetch('{{ page.url | replace: 'html', 'json' }}')
-  .then(function(response) {
-    return response.json()
-      .then(function(json) {
-        console.log(json.name);
-        // "{{ page.company }}"
-        console.log(json.admissionDate.format("yyyy-mm-dd"));
-        // {{ page.admissiondate | date: "%F" }}
-        console.log(json.resignationdate.format("yyyy-mm-dd"));
-        // {{ page.resignationdate | date: "%F" }}
-        console.log(json.atributions);
-        // {{ content | strip | replace: "<p>", "" | replace: "</p>", "" }}
-        console.log(json.languages);
-        // {{ page.languages | jsonify }}
-        console.log(json.frameworks);
-        // {{ page.frameworks | jsonify }}
-      });
-  });
+request({{ page.url | replace: 'html', 'json' | jsonify }});
+// output
+{
+  "name": {{ page.company | jsonify }},
+  "admissionDate": {{ page.admissiondate | date: "%F" | jsonify }},
+  "resignationdate": {% assign resignationdate = page.resignationdate | date: "%F" %}{% if resignationdate == 'Actual' %}{{ resignationdate | jsonify }}{% else %}{{ resignationdate | date: "%F" }}{% endif %},
+  "atributions": {{ content | strip | jsonify | replace: "<p>", "" | replace: "</p>", ""| replace: "\n", "" }},
+  "languages": {{ page.languages | jsonify }},
+  "frameworks": {{ page.frameworks | jsonify }}
+}
 {% endhighlight %}

@@ -1,20 +1,25 @@
 {% highlight c# %}
-fetch('{{ page.url | replace: 'html', 'json' }}')
-  .then(function(response) {
-    return response.json()
-      .then(function(json) {
-        console.log(json.name);
-        // "{{ page.company }}"
-        console.log(json.admissionDate.format("yyyy-mm-dd"));
-        // {{ page.admissiondate | date: "%F" }}
-        console.log(json.resignationdate.format("yyyy-mm-dd"));
-        // {{ page.resignationdate | date: "%F" }}
-        console.log(json.atributions);
-        // {{ content | strip | replace: "<p>", "" | replace: "</p>", "" }}
-        console.log(json.languages);
-        // {{ page.languages | jsonify }}
-        console.log(json.frameworks);
-        // {{ page.frameworks | jsonify }}
-      });
-  });
+
+namespace Company
+{
+   using DataObjectLayer;
+
+  static void Main(string[] args)
+  {
+    var company = Dao.request("{{ page.url | replace: 'html', 'json' }}");
+    System.Console.WriteLine(company.Name);
+    "{{ page.company }}"
+    System.Console.WriteLine(company.admissionDate.toString("yyyy-mm-dd"));
+    {{ page.admissiondate | date: "%F" }}
+    System.Console.WriteLine(company.resignationdate.toString("yyyy-mm-dd"));
+    {% assign resignationdate = page.resignationdate | date: "%F" %}
+    {% if resignationdate != 'Actual' %}{{ resignationdate | date: "%F" }}{% else %}"{{ resignationdate }}"{% endif %}
+    System.Console.WriteLine(company.atributions);
+    {{ content | strip | jsonify | replace: "<p>", "" | replace: "</p>", ""| replace: "\n", "" }}
+    System.Console.WriteLine(company.languages);
+    {{ page.languages | jsonify }}
+    System.Console.WriteLine(company.frameworks);
+    {{ page.frameworks | jsonify }}
+  }
+}
 {% endhighlight %}
