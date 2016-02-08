@@ -1,5 +1,7 @@
 ---
 layout: graduation
+order: 9
+location: Curitiba - PR / BR
 institution: UNESA - Universidade Estácio de Sá
 startdate: 2014-12-20 14:00:00
 enddate: 2016-03-01

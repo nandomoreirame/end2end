@@ -1,10 +1,11 @@
+{% assign dateFormat = "%B, %Y" %}
 {% highlight js %}
 request({{ page.url | replace: 'html', 'json' | jsonify }});
 // output
 {
   "name": {{ page.company | jsonify }},
-  "admissionDate": {{ page.admissiondate | date: "%F" | jsonify }},
-  "resignationdate": {% assign resignationdate = page.resignationdate | date: "%F" %}{% if resignationdate == 'Actual' %}{{ resignationdate | jsonify }}{% else %}{{ resignationdate | date: "%F" }}{% endif %},
+  "admissionDate": {{ page.admissiondate | date: dateFormat | jsonify }},
+  "resignationdate": {% assign resignationdate = page.resignationdate | date: dateFormat %}{% if resignationdate == 'Actual' %}{{ resignationdate | jsonify }}{% else %}{{ resignationdate | date: dateFormat  | jsonify}}{% endif %},
   "atributions": {{ content | strip | jsonify | replace: "<p>", "" | replace: "</p>", ""| replace: "\n", "" }},
   "languages": {{ page.languages | jsonify }},
   "frameworks": {{ page.frameworks | jsonify }}

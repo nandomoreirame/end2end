@@ -14,7 +14,7 @@ function request(file) {
 }
 {% endhighlight %}
 
-{% assign experiences = site.experiences | sort: 'meta.admissiondate' | reverse %}
+{% assign experiences = site.experiences | sort: "order" %}
 {% for experience in experiences reversed %}
   {{ experience.output }}
 {% endfor %}

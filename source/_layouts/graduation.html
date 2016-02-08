@@ -1,7 +1,12 @@
 <div class="well well-sm">
-	<h4>Institution: <strong>{{ page.institution }}</strong></h4>
+	<h3>Institution: <strong>{{ page.institution }}</strong></h3>
 	<span>Graduation type: <strong>{{ page.type }}</strong></span><br />
 	<span>Course: {{ page.course }}</span><br />
 	<span><strong>{{ page.startdate  | date: "%B, %Y"}}</strong> - <strong>{{ page.enddate | date: "%B, %Y" }}</strong></span><br />
 	{{ content }}
+	{% comment %}
+	{% if page.certificate %}
+		<embed src="{{ page.certificate | prepend: site.baseurl }}" width="100%" height="650px" type='application/pdf'>
+	{% endif %}
+	{% endcomment %}
 </div>

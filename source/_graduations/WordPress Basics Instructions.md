@@ -1,10 +1,13 @@
 ---
 layout: graduation
+order: 3
+location: "Curitiba - PR / BR"
 institution: Aldeia Coworking
 startdate: 2014-07-28 14:00:00
 enddate: 2014-07-29
 type: Individual course
 course: WordPress Basics Instructions
+certificate: /images/certificates/basicoWordpress.pdf
 ---
 
 Create your own website and blog using a simple, easy and excellent aesthetic quality platform

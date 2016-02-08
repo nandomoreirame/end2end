@@ -1,5 +1,7 @@
 ---
 layout: graduation
+order: 2
+location: "Curitiba - PR / BR"
 institution: TechResult IT Solutions
 startdate: 2011-02-14 14:00:00
 enddate: 2011-02-18
