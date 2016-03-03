@@ -2,6 +2,7 @@
 permalink   : /blog/:year/:title/
 markdown    : kramdown
 highlighter : pygments
+gems: [jekyll-paginate]
 
 paginate: 3
 paginate_path: "/blog/page/:num/"
