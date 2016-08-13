@@ -12,7 +12,6 @@ body {
 body {
   border-top: 5px solid $primary-color;
   background: $base-background-color url("../images/bg-pattern.png");
-  word-wrap: break-word; // Fixes Issue #25
 }
 
 .container {
@@ -83,6 +82,7 @@ body {
   float: right;
   @extend .btn;
   padding: 5px;
+  margin: 0 $big-spacing 0 0;
 
   span {
     width: 30px;
