@@ -11,7 +11,7 @@ comments: true
 source: source
 destination: _site
 sass:
-  sass_dir: _scss
+  sass_dir: _sass
   style: compressed # expanded
 
 # SEO settings
