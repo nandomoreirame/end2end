@@ -1,11 +1,4 @@
-# end2end
-
-[![Build Status](https://travis-ci.org/nandomoreirame/end2end.svg?branch=master)](https://travis-ci.org/nandomoreirame/end2end)
-
-Clean Jekyll theme
-
-> :warning:
-  This theme requires ruby and rubygems installed
+# end2end Clean Jekyll theme [![Build Status](https://travis-ci.org/nandomoreirame/end2end.svg?branch=master)](https://travis-ci.org/nandomoreirame/end2end)
 
 * [x] Clean layout
 * [x] Resposive layout

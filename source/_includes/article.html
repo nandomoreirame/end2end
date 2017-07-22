@@ -1,18 +1,20 @@
 <article class="post">
   <figure class="post-thumbnail {% if post.image %}{% else %}no-image{% endif %}">
-    {% if post.image %}
-      <img src="{{ post.image }}" alt="{{ post.title }}">
-    {% endif %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      {% endif %}
+    </a>
   </figure>
   <div class="post-content">
     <header class="post-header">
       <h1 class="post-title">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h1>
-      <div class="post-meta">
+      <em class="post-meta">
         <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-      </div>
+      </em>
     </header>
-    <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">{{ post.content | strip_html | truncatewords: 30 }}</a></p>
+    <p><a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}">{{ post.content | strip_html | truncatewords: 30 }} <span class="read-more">[read more]</span></a></p>
   </div>
 </article>

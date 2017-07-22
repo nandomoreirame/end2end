@@ -1,0 +1,12 @@
+.card
+  background-color: $white-color
+  box-shadow: -1px 2px 6px 0 rgba($black-color, .1)
+  padding: $base-spacing
+  transition: box-shadow $base-duration $base-timing
+  border-radius: $big-border-radius
+
+  &:not(:last-child)
+    margin: 0 0 $base-spacing
+
+  &:hover
+    box-shadow: -1px 2px 12px 0 rgba($black-color, .2)

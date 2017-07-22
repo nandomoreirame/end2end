@@ -1,0 +1,34 @@
+
+html,
+body
+  width: 100%
+  height: 100%
+
+body
+  border-top: 5px solid $primary-color
+  background: $base-background-color
+  padding-top: 75px
+
+  +media($tablet-small)
+    padding-top: 0
+
+figure
+  margin: 0
+  padding: 0
+
+.main-container
+  background: darken($base-background-color, 3%)
+  padding: $base-spacing 0
+
+.container
+  max-width: $phone-large
+  margin-left: auto
+  margin-right: auto
+  padding-left: $base-spacing
+  padding-right: $base-spacing
+
+  +media($tablet-small)
+    max-width: $tablet-small
+
+  +media($desktop)
+    max-width: 960px

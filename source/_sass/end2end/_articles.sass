@@ -1,0 +1,76 @@
+
+//
+// Articles
+//
+
+.post
+  display: table
+
+  &-meta
+    font-size: .8rem
+    font-weight: 300
+
+  &-thumbnail
+    &, img
+      background-color: #f1eff0
+      border-radius: $base-border-radius
+
+    +media($tablet-small)
+      float: left
+      max-width: 250px
+      margin-right: $small-spacing
+      margin-bottom: $small-spacing
+      padding: $small-spacing
+      border: $base-border
+
+  .read-more
+    color: lighten($action-color, 10%)
+
+  &-header
+    margin-bottom: $base-spacing
+
+  &-title
+    font-size: rem(26)
+    margin-bottom: 0
+    line-height: 1.5em
+
+  &-list
+    .post
+      @extend .card
+
+      a
+        color: $base-font-color
+
+        &:hover,
+        &:active,
+        &:focus
+          color: $primary-color
+
+.post-list
+  .post
+    &-content,
+    &-thumbnail
+      +media($tablet-small)
+        display: table-cell
+        vertical-align: middle
+
+    &-thumbnail
+      margin-bottom: $base-spacing
+      padding: 0
+
+      +media($tablet-small)
+        width: 250px
+        margin: 0
+
+      > a
+        display: inline-block
+
+      &.no-image > a
+        width: 100%
+        min-height: 200px
+        background: url(../images/placeholder.png) no-repeat 50%
+        background-size: cover
+
+    &-content
+      +media($tablet-small)
+        padding: 0 0 0 $base-spacing

@@ -1,23 +1,20 @@
 <header class="site-header">
   <div class="container">
-    <h1><a href="{{ "/" | prepend: site.baseurl }}">end2<span>end</span></a></h1>
-
-    <button type="button" class="sliding-panel-button">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="navbar sliding-panel-content">
+    <input type="checkbox" id="toggleNavbar">
+    <h1 class="logo"><a href="{{ "/" | prepend: site.baseurl }}">end2<span>end</span> <small>v2.0</small></a></h1>
+    <label for="toggleNavbar" role="button" class="toggle-navbar-button">
+      <i class="icon icon-menu"></i>
+      <i class="icon icon-cross"></i>
+    </label>
+    <nav class="navbar">
       <ul>
+        <li><a href="{{ '/' | prepend: site.baseurl }}" title="Home">Home</a></li>
         {% for item in site.navbar %}
           <li><a href="{{ '/' | prepend: site.baseurl }}{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a></li>
         {% endfor %}
         <li><a href="{{ site.repo }}/archive/master.zip" title="Download">Download</a></li>
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-feed"></i></a></li>
+        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-rss"></i></a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-<div class="sliding-panel-fade-screen"></div>

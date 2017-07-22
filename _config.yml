@@ -1,7 +1,7 @@
 # Build settings
-permalink   : /blog/:year/:title/
-markdown    : kramdown
-highlighter : pygments
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
 gems: [jekyll-paginate]
 
 paginate: 3
@@ -20,35 +20,32 @@ description: "A free Jekyll theme for download"
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
 url: http://nandomoreira.me
 baseurl: "/end2end"
-# baseurl: ""
 
-# google_analytics: UA-52446115-1
+google_analytics: UA-52446115-1
 repo: http://github.com/nandomoreirame/end2end
 disqus_shortname: "nandothemes"
 disqus_site_shortname: "nandothemes"
 
 # Author settings
 author:
-  name      : Fernando Moreira
-  job       : Frontend Engineer
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb     : /images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  twitter   : http://twitter.com/nandomoreirame
-  facebook  : http://facebook.com/fernando.dev
-  linkedin  : http://linkedin.com/in/nandomoreirame
+  name: Fernando Moreira
+  job: Frontend Engineer
+  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb: /images/author.jpg
+  email: nandomoreira.me@gmail.com
+  url: https://nandomoreira.me/
+  github: https://github.com/nandomoreirame
+  twitter: https://twitter.com/umdevux
+  facebook: https://facebook.com/umdevux
+  linkedin: https://linkedin.com/in/nandomoreirame
 
 # navbar pages
 navbar:
   - slug: about
     title: About
-  # - slug: resume
-  #   title: Resume
-  # - slug: skills
-  #   title: Skills
+  - slug: icons
+    title: Icons
   - slug: blog
     title: Blog
 
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]

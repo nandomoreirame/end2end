@@ -1,0 +1,107 @@
+.navbar
+  display: none
+  +position(fixed, 0)
+  z-index: 99
+  text-align: center
+  background-color: rgba($action-color, .9)
+  width: 100%
+  height: 100%
+
+  ul
+    display: table-cell
+    vertical-align: middle
+    padding: 0 $base-spacing
+    margin: 0
+
+  li, a
+    display: block
+
+  a
+    padding: 5px 15px
+    font-size: 2rem
+    position: relative
+    color: #fff
+
+    &:before,
+    &:after
+      content: ''
+      display: block
+      height: 2px
+      width: 0
+      background-color: #fff
+      transition: width $base-duration $base-timing
+      +position(absolute, null 0 null null)
+
+    &:before
+      top: 0
+      left: 0
+
+    &:after
+      bottom: 0
+      right: 0
+
+    &:hover, &:focus
+      color: #fff
+      opacity: .7
+      &:before,
+      &:after
+        width: 100%
+
+  +media($tablet-small)
+    text-align: left
+    background-color: transparent
+    position: relative
+    float: right
+    width: auto
+
+    ul
+      padding: 0
+
+    &, li, a
+      display: inline-block
+
+    a
+      padding: 5px 15px
+      color: inherit
+      font-size: inherit
+
+      &:before,
+      &:after
+        background-color: $light-gray-color
+
+      &:hover, &:focus
+        color: inherit
+
+.toggle-navbar-button
+  float: right
+  padding: $xsmall-spacing $small-spacing
+  margin: 0
+  +position(fixed, $base-spacing $base-spacing null null)
+  z-index: 100
+  @extend %button
+
+  .icon-menu
+    display: block
+
+  .icon-cross
+    display: none
+
+  +media($tablet-small)
+    display: none
+
+#toggleNavbar
+  +position(fixed, -999999px -999999px null null)
+
+  &:checked
+    ~ .navbar
+      display: table
+
+    ~ .logo a,
+    ~ .logo span
+      color: #fff
+
+    ~ .toggle-navbar-button
+      .icon-menu
+        display: none
+      .icon-cross
+        display: block

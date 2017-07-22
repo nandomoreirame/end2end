@@ -16,9 +16,9 @@ $font-weight-normal: 400
 $font-weight-bold: 700
 
 // Other Sizes
-$base-border-radius: 3px
 $base-spacing: $base-line-height * 1em
 $small-spacing: $base-spacing / 2
+$xsmall-spacing: $base-spacing / 3
 $big-spacing: $base-spacing * 2.5
 $base-z-index: 0
 
@@ -40,7 +40,7 @@ $base-border-color: $light-gray-color
 $base-border: 1px solid $base-border-color
 
 // Background Colors
-$base-background-color: darken($white-color, 3%)
+$base-background-color: $white-color
 $secondary-background-color: tint($base-border-color, 75%)
 
 // Forms
@@ -52,6 +52,12 @@ $base-duration: .3s
 $base-timing: ease-in-out
 
 $default-feature: min-width
+$phone-small: 320px
+$phone: 360px
+$phone-large: 420px
+$tablet-small: 768px
+$tablet: 1024px
+$desktop: 1240px
 
 // Radius
 $small-border-radius: 3px
@@ -232,4 +238,3 @@ $icon-html-five: "\eae4"
 $icon-html-five2: "\eae5"
 $icon-css3: "\eae6"
 $icon-git: "\eae7"
-

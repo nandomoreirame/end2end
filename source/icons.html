@@ -1,0 +1,51 @@
+---
+layout: page
+title: Icons fonts
+permalink: /icons/
+---
+
+<style>
+  .icondemo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .icondemo__item {
+    width: 25%;
+    float: left;
+    padding: 0;
+  }
+  .icondemo__inner {
+    margin: 5px;
+    padding: 15px 10px;
+    border-radius: 6px;
+  }
+  .icondemo__item .icon {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transition: transform .12s linear;
+  }
+  .icondemo__item:hover .icon {
+    transform: scale(1.4)
+  }
+  .icondemo__item code {
+    display: block;
+  }
+</style>
+
+<ul class="icondemo">
+  {% for icon in site.data._icons %}
+    <li class="icondemo__item">
+      <div class="icondemo__inner">
+        <i class="icon icon-{{ icon.name }}"></i>
+        <code>{{ icon.name }}</code>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="clearfix"></div>

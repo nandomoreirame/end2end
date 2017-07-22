@@ -7,10 +7,17 @@ layout: pages
   <div class="card">
     <header class="post-header">
       <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <em class="post-meta">
+        <time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+      </em>
     </header>
 
     <div class="post-content">
+      {% if page.image %}
+        <figure class="post-thumbnail {% if page.image %}{% else %}no-image{% endif %}">
+          <img src="{{ page.image }}" alt="{{ page.title }}">
+        </figure>
+      {% endif %}
       {{ content }}
     </div>
 

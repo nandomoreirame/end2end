@@ -1,0 +1,46 @@
+.site-header
+  background-color: $white-color
+  padding: 0
+  margin: 0
+  border-bottom: 1px solid rgba($light-gray-color, .5)
+  +position(fixed, 0 0 null 0)
+  min-height: 80px
+  width: 100%
+  z-index: 1000
+
+  @extend %clearfix
+
+  +media($tablet-small)
+    +position(relative, auto)
+    padding: $base-spacing 0
+    min-height: 35px
+
+  .logo, a
+    text-transform: lowercase
+
+  .navbar
+    float: right
+
+  a
+    color: $medium-gray-color
+
+    &:hover,
+    &:focus,
+    &:active
+      color: $dark-gray-color
+
+.logo
+  margin: 0
+  padding: 0
+  float: left
+  font-weight: $font-weight-normal
+  font-size: rem(20)
+  +position(fixed, $base-spacing null null $base-spacing)
+  z-index: 100
+
+  +media($tablet-small)
+    padding: 5px 0
+    +position(relative, auto)
+
+  span
+    color: $primary-color

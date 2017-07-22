@@ -1,19 +1,9 @@
 ul,
 ol
-  margin: 0
-  padding: 0
+  margin: 0 0 $small-spacing
+  padding: 0 0 0 $base-spacing
   list-style-position: inside
   padding-left: 25px
-
-  &%default-ul
-    list-style-type: disc
-    margin-bottom: $small-spacing
-    padding-left: $base-spacing
-
-  &%default-ol
-    list-style-type: decimal
-    margin-bottom: $small-spacing
-    padding-left: $base-spacing
 
 dl
   margin-bottom: $small-spacing
@@ -24,3 +14,9 @@ dl
 
   dd
     margin: 0
+
+ul
+  list-style-type: disc
+
+ol
+  list-style-type: decimal
