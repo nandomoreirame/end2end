@@ -1,0 +1,235 @@
+// Typography
+$base-font-family: "Montserrat", $helvetica
+$heading-font-family: $base-font-family
+
+// Font Sizes
+$unit-font-size: 16px
+$base-font-size: 1em
+
+// Line height
+$base-line-height: 1.5
+$heading-line-height: 1.3
+
+// font weight
+$font-weight-light: 300
+$font-weight-normal: 400
+$font-weight-bold: 700
+
+// Other Sizes
+$base-border-radius: 3px
+$base-spacing: $base-line-height * 1em
+$small-spacing: $base-spacing / 2
+$big-spacing: $base-spacing * 2.5
+$base-z-index: 0
+
+// Colors
+$primary-color: #337ab7
+$white-color: #fff
+$black-color: #000
+$blue-color: #477dca
+$dark-gray-color: #232323
+$medium-gray-color: #9a9a9a
+$light-gray-color: #dedede
+
+// Font Colors
+$base-font-color: lighten($dark-gray-color, 25%)
+$action-color: $primary-color
+
+// Border
+$base-border-color: $light-gray-color
+$base-border: 1px solid $base-border-color
+
+// Background Colors
+$base-background-color: darken($white-color, 3%)
+$secondary-background-color: tint($base-border-color, 75%)
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06)
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3)
+
+// Animations
+$base-duration: .3s
+$base-timing: ease-in-out
+
+$default-feature: min-width
+
+// Radius
+$small-border-radius: 3px
+$base-border-radius: 6px
+$big-border-radius: 10px
+
+// Custom icons
+//
+$icon-font-path: "../fonts"
+
+$icon-home: "\e900"
+$icon-pencil: "\e905"
+$icon-image: "\e90d"
+$icon-images: "\e90e"
+$icon-camera: "\e90f"
+$icon-headphones: "\e910"
+$icon-music: "\e911"
+$icon-play: "\e912"
+$icon-price-tag: "\e935"
+$icon-price-tags: "\e936"
+$icon-barcode: "\e937"
+$icon-qrcode: "\e938"
+$icon-cart: "\e93a"
+$icon-phone: "\e942"
+$icon-phone-hang-up: "\e943"
+$icon-address-book: "\e944"
+$icon-envelop: "\e945"
+$icon-location: "\e947"
+$icon-location2: "\e948"
+$icon-calendar: "\e953"
+$icon-keyboard: "\e955"
+$icon-display: "\e956"
+$icon-laptop: "\e957"
+$icon-mobile: "\e958"
+$icon-mobile2: "\e959"
+$icon-drawer: "\e95c"
+$icon-drawer2: "\e95d"
+$icon-floppy-disk: "\e962"
+$icon-undo: "\e965"
+$icon-redo: "\e966"
+$icon-undo2: "\e967"
+$icon-redo2: "\e968"
+$icon-bubble: "\e96b"
+$icon-bubbles2: "\e96d"
+$icon-bubble2: "\e96e"
+$icon-bubbles4: "\e970"
+$icon-user: "\e971"
+$icon-users: "\e972"
+$icon-user-tie: "\e976"
+$icon-quotes-left: "\e977"
+$icon-quotes-right: "\e978"
+$icon-spinner2: "\e97b"
+$icon-spinner5: "\e97e"
+$icon-spinner8: "\e981"
+$icon-spinner11: "\e984"
+$icon-search: "\e986"
+$icon-zoom-in: "\e987"
+$icon-zoom-out: "\e988"
+$icon-enlarge: "\e989"
+$icon-shrink: "\e98a"
+$icon-enlarge2: "\e98b"
+$icon-shrink2: "\e98c"
+$icon-lock: "\e98f"
+$icon-unlocked: "\e990"
+$icon-wrench: "\e991"
+$icon-equalizer2: "\e993"
+$icon-cog: "\e994"
+$icon-cogs: "\e995"
+$icon-bug: "\e999"
+$icon-pie-chart: "\e99a"
+$icon-stats-dots: "\e99b"
+$icon-stats-bars: "\e99c"
+$icon-mug: "\e9a2"
+$icon-bin: "\e9ac"
+$icon-briefcase: "\e9ae"
+$icon-airplane: "\e9af"
+$icon-truck: "\e9b0"
+$icon-switch: "\e9b6"
+$icon-power-cord: "\e9b7"
+$icon-clipboard: "\e9b8"
+$icon-menu: "\e9bd"
+$icon-menu2: "\e9be"
+$icon-menu3: "\e9bf"
+$icon-menu4: "\e9c0"
+$icon-cloud: "\e9c1"
+$icon-cloud-download: "\e9c2"
+$icon-cloud-upload: "\e9c3"
+$icon-cloud-check: "\e9c4"
+$icon-earth: "\e9ca"
+$icon-link: "\e9cb"
+$icon-attachment: "\e9cd"
+$icon-eye: "\e9ce"
+$icon-eye-blocked: "\e9d1"
+$icon-star-empty: "\e9d7"
+$icon-star-half: "\e9d8"
+$icon-star-full: "\e9d9"
+$icon-heart: "\e9da"
+$icon-man: "\e9dc"
+$icon-woman: "\e9dd"
+$icon-man-woman: "\e9de"
+$icon-warning: "\ea07"
+$icon-notification: "\ea08"
+$icon-question: "\ea09"
+$icon-plus: "\ea0a"
+$icon-minus: "\ea0b"
+$icon-info: "\ea0c"
+$icon-cancel-circle: "\ea0d"
+$icon-blocked: "\ea0e"
+$icon-cross: "\ea0f"
+$icon-checkmark: "\ea10"
+$icon-checkmark2: "\ea11"
+$icon-loop2: "\ea2e"
+$icon-infinite: "\ea2f"
+$icon-shuffle: "\ea30"
+$icon-arrow-right2: "\ea3c"
+$icon-arrow-left2: "\ea40"
+$icon-circle-up: "\ea41"
+$icon-circle-right: "\ea42"
+$icon-circle-down: "\ea43"
+$icon-circle-left: "\ea44"
+$icon-shift: "\ea4f"
+$icon-ctrl: "\ea50"
+$icon-checkbox-checked: "\ea52"
+$icon-checkbox-unchecked: "\ea53"
+$icon-radio-checked: "\ea54"
+$icon-radio-unchecked: "\ea56"
+$icon-filter: "\ea5b"
+$icon-share: "\ea7d"
+$icon-new-tab: "\ea7e"
+$icon-embed: "\ea7f"
+$icon-embed2: "\ea80"
+$icon-terminal: "\ea81"
+$icon-share2: "\ea82"
+$icon-mail: "\ea83"
+$icon-mail2: "\ea84"
+$icon-mail3: "\ea85"
+$icon-mail4: "\ea86"
+$icon-google3: "\ea8a"
+$icon-google-plus: "\ea8b"
+$icon-google-plus2: "\ea8c"
+$icon-google-plus3: "\ea8d"
+$icon-hangouts: "\ea8e"
+$icon-google-drive: "\ea8f"
+$icon-facebook: "\ea90"
+$icon-facebook2: "\ea91"
+$icon-instagram: "\ea92"
+$icon-whatsapp: "\ea93"
+$icon-spotify: "\ea94"
+$icon-telegram: "\ea95"
+$icon-twitter: "\ea96"
+$icon-rss: "\ea9b"
+$icon-rss2: "\ea9c"
+$icon-youtube: "\ea9d"
+$icon-vimeo: "\eaa0"
+$icon-flickr2: "\eaa4"
+$icon-dribbble: "\eaa7"
+$icon-behance: "\eaa8"
+$icon-behance2: "\eaa9"
+$icon-dropbox: "\eaae"
+$icon-github: "\eab0"
+$icon-trello: "\eab3"
+$icon-wordpress: "\eab4"
+$icon-joomla: "\eab5"
+$icon-tux: "\eabd"
+$icon-appleinc: "\eabe"
+$icon-finder: "\eabf"
+$icon-android: "\eac0"
+$icon-skype: "\eac5"
+$icon-linkedin: "\eac9"
+$icon-linkedin2: "\eaca"
+$icon-chrome: "\ead9"
+$icon-firefox: "\eada"
+$icon-IE: "\eadb"
+$icon-edge: "\eadc"
+$icon-safari: "\eadd"
+$icon-opera: "\eade"
+$icon-html-five: "\eae4"
+$icon-html-five2: "\eae5"
+$icon-css3: "\eae6"
+$icon-git: "\eae7"
+

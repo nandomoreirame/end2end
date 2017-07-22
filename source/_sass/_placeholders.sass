@@ -1,0 +1,38 @@
+%clearfix
+  +clearfix
+
+%button
+  appearance: none
+  background-color: $action-color
+  border: 0
+  border-radius: $base-border-radius
+  color: #fff
+  cursor: pointer
+  display: inline-block
+  font-family: inherit
+  font-size: inherit
+  -webkit-font-smoothing: antialiased
+  font-weight: 700
+  line-height: 1
+  padding: $small-spacing $base-spacing
+  text-decoration: none
+  transition: background-color $base-duration $base-timing
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+
+  &:hover,
+  &:focus
+    background-color: shade($action-color, 20%)
+
+  &.disabled,
+  &:disabled
+    color: inherit
+    cursor: not-allowed
+    box-shadow: none
+    opacity: .65
+
+    &:hover,
+    &:focus
+      color: inherit
+      background: none transparent

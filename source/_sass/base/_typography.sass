@@ -1,0 +1,85 @@
+html
+  font-size: $unit-font-size
+
+body
+  color: $base-font-color
+  font-family: $base-font-family
+  font-feature-settings: "kern", "liga", "pnum"
+  font-size: $base-font-size
+  font-weight: $font-weight-normal
+  line-height: $base-line-height
+  font-feature-settings: "calt" 1
+  text-rendering: optimizeLegibility
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $heading-font-family
+  font-size: $base-font-size
+  line-height: $heading-line-height
+  font-weight: $font-weight-bold
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+  margin: 0 0 $small-spacing
+
+  &:last-child
+    margin-bottom: 0
+
+p
+  font-weight: $font-weight-light
+
+em
+  font-style: italic
+
+small
+  font-size: 80%
+
+a
+  color: $action-color
+  text-decoration: none
+  transition: color $base-duration $base-timing
+
+  &:active,
+  &:focus,
+  &:hover
+    color: shade($action-color, 25%)
+
+hr
+  border-bottom: $base-border
+  border-left: 0
+  border-right: 0
+  border-top: 0
+  margin: $base-spacing 0
+
+img,
+picture
+  margin: 0
+  max-width: 100%
+
+code
+  background: none
+  border-radius: 0
+  border: none
+  font-family: "Courier New", monospace
+  font-size: 0.9em
+  margin: 0
+  padding: 0 5px
+  background-color: lighten($light-gray-color, 6%)
+
+pre
+  -webkit-overflow-scrolling: touch
+  font-family: "Courier New", monospace
+  font-size: 0.9em
+  margin: 0
+
+  code
+    line-height: 1.75em
