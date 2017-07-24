@@ -15,14 +15,14 @@ env:
 branches:
   only:
     - master
-    - source
+    - gh-pages
 deploy:
   provider: pages
   local_dir: "_site"
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  target_branch: master
+  target_branch: gh-pages
   on:
-    branch: master
+    branch: gh-pages
 notifications:
   email: false
