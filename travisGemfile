@@ -5,13 +5,10 @@ gem "rake"
 gem "sass"
 gem "json"
 gem "redcarpet"
-
-group :jekyll_plugins do
-  gem "github-pages"
-  gem "bourbon"
-  gem "jekyll-feed"
-  gem "jekyll-paginate"
-  gem "pygments.rb"
-  gem "jekyll-compose"
-  gem "kramdown"
-end
+gem "github-pages", group: :jekyll_plugins
+gem "bourbon"
+gem "jekyll-feed"
+gem "jekyll-paginate"
+gem "pygments.rb"
+gem "jekyll-compose"
+gem "kramdown"
