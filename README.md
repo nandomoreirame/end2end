@@ -1,8 +1,6 @@
 # end2end Clean Jekyll theme [![Build Status](https://travis-ci.org/nandomoreirame/end2end.svg?branch=master)](https://travis-ci.org/nandomoreirame/end2end)
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/1QQGjzDQqsP1MDC8moUwzJjD/nandomoreirame/end2end'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/1QQGjzDQqsP1MDC8moUwzJjD/nandomoreirame/end2end.svg' />
-</a>
+
 
 * [x] Clean layout
 * [x] Resposive layout
