@@ -3,6 +3,7 @@ require "rubygems"
 require "tmpdir"
 require "bundler/setup"
 require "jekyll"
+require "bourbon"
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "nandomoreirame/end2end"
