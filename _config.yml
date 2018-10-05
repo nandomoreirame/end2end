@@ -2,10 +2,13 @@
 permalink: /blog/:year/:title/
 markdown: kramdown
 highlighter: pygments
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate-v2]
 
-paginate: 3
-paginate_path: "/blog/page/:num/"
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
 comments: true
 
 source: source
