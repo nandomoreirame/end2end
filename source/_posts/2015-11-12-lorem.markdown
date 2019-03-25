@@ -32,10 +32,10 @@ category: welcome
 
 <h6>Header Level 6</h6>
 
-{% highlight css %}
+```css
 #header h1 a {
   display: block;
   width: 300px;
   height: 80px;
 }
-{% endhighlight %}
+```

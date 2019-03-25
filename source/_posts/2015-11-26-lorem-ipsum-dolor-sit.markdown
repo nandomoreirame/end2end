@@ -29,10 +29,10 @@ categories: jekyll update
   <li>Aliquam tincidunt mauris eu risus.</li>
 </ul>
 
-{% highlight css %}
+```ruby
 #header h1 a {
   display: block;
   width: 300px;
   height: 80px;
 }
-{% endhighlight %}
+```
