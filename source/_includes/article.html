@@ -2,7 +2,7 @@
   <figure class="post-thumbnail {% if post.image %}{% else %}no-image{% endif %}">
     <a href="{{ post.url | prepend: site.baseurl }}">
       {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
+      <img src="{{ post.image }}" alt="{{ post.title }}">
       {% endif %}
     </a>
   </figure>

@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="container">
     <input type="checkbox" id="toggleNavbar">
-    <h1 class="logo"><a href="{{ "/" | prepend: site.baseurl }}">end2<span>end</span> <small>v2.0</small></a></h1>
+    <h1 class="logo"><a href="{{ "/" | prepend: site.baseurl }}">Satwik <span>Bhimavarapu</span></a></h1>
     <label for="toggleNavbar" role="button" class="toggle-navbar-button">
       <i class="icon icon-menu"></i>
       <i class="icon icon-cross"></i>
@@ -10,10 +10,8 @@
       <ul>
         <li><a href="{{ '/' | prepend: site.baseurl }}" title="Home">Home</a></li>
         {% for item in site.navbar %}
-          <li><a href="{{ '/' | prepend: site.baseurl }}{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a></li>
+        <li><a href="{{ '/' | prepend: site.baseurl }}{{ item.slug }}" title="{{ item.title }}">{{ item.title }}</a></li>
         {% endfor %}
-        <li><a href="{{ site.repo }}/archive/master.zip" title="Download">Download</a></li>
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-rss"></i></a></li>
       </ul>
     </nav>
   </div>
